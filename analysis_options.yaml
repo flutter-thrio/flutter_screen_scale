@@ -1,7 +1,7 @@
 include: package:linter_rules_dart/analysis_options.yaml
 analyzer:
   exclude:
-
+    - analysis_options.yaml
 # https://dart-lang.github.io/linter/lints/
 linter:
   rules:
