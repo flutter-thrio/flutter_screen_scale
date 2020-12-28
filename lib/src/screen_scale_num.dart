@@ -9,7 +9,7 @@ part of 'screen_scale.dart';
 extension ScreenScaleNum on num {
   /// Scale according to the width of the design.
   ///
-  T width<T extends num>(BuildContext context) {
+  num width(BuildContext context) {
     final state = _tryStateOf<_ScreenScaleState>(context);
     if (state == null) {
       return this;
@@ -19,7 +19,7 @@ extension ScreenScaleNum on num {
 
   /// Scale according to the height of the design.
   ///
-  T height<T extends num>(BuildContext context) {
+  num height(BuildContext context) {
     final state = _tryStateOf<_ScreenScaleState>(context);
     if (state == null) {
       return this;
@@ -29,7 +29,7 @@ extension ScreenScaleNum on num {
 
   /// Scale according to the width/height of the design.
   ///
-  T text<T extends num>(BuildContext context, [bool allowTextScale = null]) {
+  num text(BuildContext context, {bool allowTextScale}) {
     final state = _tryStateOf<_ScreenScaleState>(context);
     if (state == null) {
       return this;
@@ -42,7 +42,7 @@ extension ScreenScaleNum on num {
 
   /// Scale according to the width/height of the design.
   ///
-  T radius<T extends num>(BuildContext context) {
+  num radius(BuildContext context) {
     final state = _tryStateOf<_ScreenScaleState>(context);
     if (state == null) {
       return this;
