@@ -1,0 +1,8 @@
+include: package:linter_rules_dart/analysis_options.yaml
+analyzer:
+  exclude:
+
+# https://dart-lang.github.io/linter/lints/
+linter:
+  rules:
+    public_member_api_docs: false
